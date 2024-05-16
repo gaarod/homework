@@ -11,10 +11,15 @@ public class Main {
 
         List<Animal> animals = new ArrayList<>();
 
+        Dog dog = new Dog();
 
+        dog.setName("Baron");
+        dog.setAge(10);
+        dog.setBreed("Bernese Mountain Dog");
 
+        animals.add(dog);
         animals.add(new Cat("Kuzya", 1, "white"));
-        animals.add(new Dog("Bobik", 2, "yard terrier"));
+        animals.add(new Dog("Bobik", 2, "Yard Terrier"));
 
         for (var animal : animals) {
             animal.makeSound();
@@ -22,5 +27,7 @@ public class Main {
 
         System.out.println(InitExample.getStaticValue());
         InitExample example = new InitExample();
+
+
     }
 }
