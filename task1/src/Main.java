@@ -2,6 +2,7 @@ import subtask1.Animal;
 import subtask1.Cat;
 import subtask1.Dog;
 import subtask2.InitExample;
+import subtask4.MathOperations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,12 @@ public class Main {
 
         System.out.println(InitExample.getStaticValue());
         InitExample example = new InitExample();
+
+        MathOperations math = new MathOperations();
+
+        System.out.println("Sum of 2 integers: " + math.add(1, 2));
+        System.out.println("Sum of 2 doubles: " + math.add(1.5, 2.5));
+        System.out.println("Sum of 3 integers: " + math.add(1, 2, 3));
 
 
     }
